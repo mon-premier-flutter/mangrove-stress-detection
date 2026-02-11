@@ -1,0 +1,35 @@
+# --- ENVIRONNEMENT VIRTUEL ---
+# On n'envoie jamais la bibliothèque 'env' sur GitHub car elle est propre à ton PC
+env_mangrove/
+venv/
+.env
+
+# --- DONNÉES ET PHOTOS ---
+# On ignore les photos brutes (trop lourdes pour GitHub)
+data/datamangrove/
+
+# Optionnel : Si tes photos traitées deviennent trop nombreuses, ignore-les aussi
+# data/processed/
+
+# Ignore les fichiers temporaires de Label Studio si tu les as mis dans le projet
+*.sqlite3
+*.labelstudio
+
+# --- PYTHON ---
+# Fichiers de compilation Python (inutiles sur GitHub)
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# --- SYSTÈME
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# --- RÉSULTATS D'ENTRAÎNEMENT ---
+# On ignore les poids lourds des modèles IA et les logs d'entraînement
+runs/
+*.pt
+*.onnx
